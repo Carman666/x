@@ -1,0 +1,12 @@
+blueprint:用于做模块化
+比如：电影，电视剧，音乐...
+可以按板块来敲写类型
+
+总结：
+url传参
+邮件发送
+ajax
+orm与数据库连接
+jinja2模板
+cookie和session原理
+搜索
