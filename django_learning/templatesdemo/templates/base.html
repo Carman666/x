@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {# 全部标题可以以小饭桌结尾 #}
+    <title>{% block title %}{% endblock %}-小饭桌</title>
+    {# 用来写css #}
+    {% block head %}{% endblock %}
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="/">首页</a></li>
+        <li><a href="/info">书籍查找</a></li>
+    </ul>
+</header>
+{# 以此为模板可以在其他html文件中写body内容 #}
+{% block body %}你好啊{% endblock %}
+<footer>未经允许不可私自转载</footer>
+</body>
+</html>

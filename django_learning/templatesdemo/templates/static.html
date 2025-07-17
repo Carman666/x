@@ -1,0 +1,15 @@
+{# 如果加在settings.py加了builtins，则可以把下面load注释掉 #}
+{# 导入静态文件css和js文件 #}
+{#{% load static %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态文件加载</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script src="{% static 'js/index.js' %}"></script>
+</head>
+<body>
+<h1>宇宙星球</h1>
+</body>
+</html>

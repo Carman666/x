@@ -1,0 +1,55 @@
+基础标签：
+h1-h6		标题标签
+p			段落标签
+br		 	换行标签
+div			盒子标签（独占一行）
+span			盒子标签（跨度，跨距）
+img 			图像标签（src-图片路径 alt-设置图片文本 title-设置图片提示文本）
+a			超链接标签
+
+
+文本格式化标签：
+b			加粗
+i			斜体
+s			删除线
+u			下划线
+
+
+表格标签：
+table			定义表格
+tr			定义行，必须嵌套在table标签中
+td			定义单元格，必须嵌套在tr标签中
+th			定义表头，不许嵌套在tr标签中（第一行）
+
+
+列表标签：
+ul			定义无序列表，ul标签只能嵌套li标签
+ol			定义有序列表，ol标签中只能嵌套li标签
+li			定义列表项，一个容纳数据元素的容器
+dl			自定义列表，dl标签中只能嵌套dt和dd标签
+dt			定义列表头
+dd			定义列表项
+
+
+表单标签：
+form			定义表单
+·action-指定表单数据提交的url地址
+·method-指定提交方式（get/post）
+
+input			文本输入框
+·type-指定输入框属性
+-text  文本					-password  密码，输入框中字符将被掩饰
+-submit  提交按钮，提交表单的数据到服务器		-button  普通按钮，常用于出发js函数
+-fild  上传文件按钮			-redio  单选按钮
+-checkbox  复选框（多选）		-hidden  隐藏输入框
+-image  提交按钮，图片形式	-reset  重置按钮，清空表单内容
+
+·name-定义元素名，用于后端接收数据
+·value-设置输入框的值
+·checked-首次加载时选中
+·maxlength-最大长度，用于规定输入的字符数量
+select		下拉
+option		下拉列表项
+textarea		文本域
+
+

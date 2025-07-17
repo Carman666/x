@@ -1,0 +1,11 @@
+1.连接数据库：需要在settings.py里找到DATABASES，然后再ENGING引擎这里把sqlite3改为你要连接的数据库；而后把NAME改为你创建的数据库名字；接连后续请看django_mysql文件夹中的settings.py文件
+2.rowcount：代表是执行了sql语句后受影响的行数
+close：关闭游标。在此之后就不能在使用，否则会抛出异常
+execute(sql[ ,parameters])：执行某个sql语句。如果在执行sql语句的时候还需要传递参数，则传给parameter参数。
+【eg.   cursor.execute("select * from article where id=%s",(1, ))】
+fetchone：执行查询操作后，获取第一条数据
+fetchamany：执行查询操作后，获取多条数据，具体条数看size参数（如果没有size参数则默认一条）
+fetchall：获取所有满足sql语句的数据
+---------------------------------------------------------------------------------------
+ORM模型
+1.一般放在app文件的model.py中，在映射之前，需要在settings.py中INSTALLED_APP中进行安装

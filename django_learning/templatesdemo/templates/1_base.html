@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}首页{% endblock %}
+
+{% block head %}
+    <style>
+    body{
+        background: aquamarine;
+    }
+    </style>
+{% endblock %}
+
+{% block body %}
+    {{ block.super }}
+	{% include 'for.html' %}
+{% endblock %}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>url标签</title>
+</head>
+<body>
+{# 跳转到baidu路由上面，跳转超链接 #}
+<a href="{% url 'baidu' %}">百度</a>
+{# 实现传递参数反转 #}
+<a href="{% url 'book_detail' book_id=1 %}">图书详情</a>
+</body>
+</html>
